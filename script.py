@@ -23,15 +23,21 @@ def Generate(wordList):
                 </div>
         """
     
-    with open('index.html', 'r') as file:
+    with open('index.html', 'r', encoding='utf-8') as file:  # Specify encoding as utf-8
         file_content = file.read().replace('$main_section', content_main).replace('$aside_section', content_aside)
         file.close()
-        with open('index.html', 'w') as main:
+        with open('index.html', 'w', encoding='utf-8') as main:  # Specify encoding as utf-8
             main.write(file_content)
     
     print('Done.')
 
 Generate([{
-    'first': 'he',
-    'second': 'y'
+    'first': 'طو',
+    'second': 'يل'
+},{
+    'first': 'كب',
+    'second': 'ير'
+},{
+    'first': 'قب',
+    'second': 'يح'
 }])
