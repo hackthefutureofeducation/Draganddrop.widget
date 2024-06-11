@@ -11,12 +11,12 @@ def Generate(wordList):
 
         content_aside += f"""
             <div class="item" draggable="true" data-answer="{ran}">
-                {item['first']}
+                {item['second']}
             </div>
         """
         content_main += f"""
             <div class="item-list">
-                    <p>{item['second']}</p>
+                    <p>{item['first']}</p>
                     <div class="dropzone" ondragover="allowDrop(event)">
                         <div class="box" data-answer="{ran}"></div>
                     </div>
