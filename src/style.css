@@ -24,8 +24,8 @@ header,
 input[type="submit"],
 .item,
 .container-box {
-    color: #000;
-    background-color: #dfabc2;
+    color: #fff;
+    background-color: blue;
     padding: 15px;
     border-radius: 15px;
 
@@ -33,7 +33,7 @@ input[type="submit"],
 
 .container-box {
     font-size: 50px;
-    background-color: #FED3E6;
+    background-color: transparent;
     color: red;
 }
 
